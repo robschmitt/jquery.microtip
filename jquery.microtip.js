@@ -46,11 +46,9 @@ $.fn.microtip = function(options) {
           tip.css({ display: "none", opacity: 1 });
           el.addClass("microtip-processed");
         }
-        el.data("microtip-visible", true);
         tip.show();
       })
       .mouseleave(function() {
-        el.data("microtip-visible", false);
         el.siblings("span.microtip-tip").hide();
       });
   });  
